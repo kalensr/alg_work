@@ -31,7 +31,7 @@ public class TestInsSort {
 		System.out.println(stopTime - startTime);
 		
 		k=null;
-		// Selection Sort
+		// Selection Sort timing test
 		startTime = System.nanoTime();
 		k =sSort.sort(l);
 		stopTime = System.nanoTime();
