@@ -1,7 +1,4 @@
 package alg_work;
-
-import org.junit.*;
-
 public class SelSort {
 	
 	/* selectSort
