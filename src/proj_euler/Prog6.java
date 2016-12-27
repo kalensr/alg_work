@@ -1,4 +1,4 @@
-package alg_work;
+package proj_euler;
 
 public class Prog6 {
 

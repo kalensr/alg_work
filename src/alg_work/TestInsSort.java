@@ -6,14 +6,15 @@ public class TestInsSort {
 
 	private InsSort iSort = new InsSort();
 	private SelSort sSort = new SelSort();
+	private MergSort mSort = new MergSort();
 	
 	@Test
 	public void test_1() {
-		int size = 50000;
+		int size = 200000;
 		int[] l = new int[size];
 		
 		for(int i=0;i<size;i++){
-			int random = (int )(Math.random() * 1000 + 1);
+			int random = (int )(Math.random() * 5000 + 1);
 			l[i] = random;
 			System.out.print(random + " ");
 		}
@@ -46,6 +47,19 @@ public class TestInsSort {
 		stopTime = System.nanoTime();
 		System.out.print("Selection Sort: ");
 		System.out.println(stopTime - startTime);
+
+		// ------------------- Merge Sort		
+				// Selection Sort timing test
+				startTime = System.nanoTime();
+				
+				/*receive returning array from iSort, 
+				 * if we want to iterate and test the results*/
+				mSort.mergSort(l);
+				
+				// stop the timer
+				stopTime = System.nanoTime();
+				System.out.print("    Merge Sort: ");
+				System.out.println(stopTime - startTime);
 
 // validate array is sorted -- not needed at this time
 		/*assertTrue(l.length==k.length);
